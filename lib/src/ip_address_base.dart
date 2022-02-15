@@ -158,8 +158,6 @@ class IpAddress {
   ///
   static Future<Map<String, dynamic>> getAllDataFor(String ip) async {
     try {
-      // return jsonDecode(
-      //     (await http.get(Uri.parse('https://ip.seeip.org/geoip/$ip'))).body);
       Map _json = jsonDecode(
           (await http.get(Uri.parse('https://ip.seeip.org/geoip/$ip'))).body);
       if (_json.containsKey('ip')) {
@@ -228,6 +226,7 @@ class IpAddress {
   static Future<double> getLongitudeFor(String ip) async {
     return double.parse(await _getSeeIpFor('longitude', ip: ip));
   }
+
 
   /// Return the timeZone for a specific ip address .
   static Future<String> getTimeZoneFor(String ip) async {
