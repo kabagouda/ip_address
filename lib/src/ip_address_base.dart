@@ -34,7 +34,7 @@ class IpAddress {
   /// - countryCode3
   /// - latitude
   /// - longitude
-  /// - timezone
+  /// - timeZone
   /// - offset
   /// - asn
   /// - organization
@@ -55,7 +55,7 @@ class IpAddress {
         'countryCode3': _json['country_code3'],
         'latitude': _json['latitude'],
         'longitude': _json['longitude'],
-        'timezone': _json['timezone'],
+        'timeZone': _json['timezone'],
         'offset': _json['offset'],
         'asn': _json['asn'],
         'organization': _json['organization']
@@ -122,8 +122,8 @@ class IpAddress {
     return double.parse('longitude');
   }
 
-  /// Return the Timezone of the visitor ip .
-  static Future<String> getTimezone() async {
+  /// Return the TimeZone of the visitor ip .
+  static Future<String> getTimeZone() async {
     return _getSeeIp('timezone');
   }
 
@@ -151,7 +151,7 @@ class IpAddress {
   /// - countryCode3
   /// - latitude
   /// - longitude
-  /// - timezone
+  /// - timeZone
   /// - offset
   /// - asn
   /// - organization
@@ -170,7 +170,7 @@ class IpAddress {
           'countryCode3': _json['country_code3'],
           'latitude': _json['latitude'],
           'longitude': _json['longitude'],
-          'timezone': _json['timezone'],
+          'timeZone': _json['timezone'],
           'offset': _json['offset'],
           'asn': _json['asn'],
           'organization': _json['organization']
@@ -229,8 +229,8 @@ class IpAddress {
     return double.parse(await _getSeeIpFor('longitude', ip: ip));
   }
 
-  /// Return the timezone for a specific ip address .
-  static Future<String> getTimezoneFor(String ip) async {
+  /// Return the timeZone for a specific ip address .
+  static Future<String> getTimeZoneFor(String ip) async {
     return _getSeeIpFor('timezone', ip: ip);
   }
 
