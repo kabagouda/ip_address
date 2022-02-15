@@ -1,5 +1,5 @@
 name: ip_address
-description: get your public IP address or geographical details from any given IP.
+description: This packages allow you get your public IP Address and many others info about it.
 version: 1.0.0
 homepage: https://github.com/kagouda/ip_address
 
