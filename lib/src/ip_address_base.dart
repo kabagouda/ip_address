@@ -7,9 +7,9 @@ enum Ip { v4, v6 }
 /// Example:
 /// ```dart
 /// void main() async {
-///   String visitorIp = await IpAddress.ip();
-///
-///   print(visitorIp);
+///   String ip = await IpAddress.getIp();
+///   print(ip);
+///  // Output : 208.67.222.222
 /// }
 /// ```
 class IpAddress {
