@@ -156,7 +156,7 @@ class IpAddress {
   /// - asn
   /// - organization
   ///
-  static Future getAllDataFor(String ip) async {
+  static Future<Map<String, dynamic>> getAllDataFor(String ip) async {
     try {
       // return jsonDecode(
       //     (await http.get(Uri.parse('https://ip.seeip.org/geoip/$ip'))).body);
